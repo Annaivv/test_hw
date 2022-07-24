@@ -1,8 +1,113 @@
 .page-header .container{
     display: flex;
     max-width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .page-header {
     background-color: var(--primary-bg-color);
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+    padding-top: 8px;
+}
+
+.header-mobile-menu {
+    background-color: transparent;
+    border-color: transparent;
+    margin-left: 61px;
+    cursor: pointer;
+}
+
+.header-mobile-button {
+    position: absolute;
+  fill: var(--white);
+}
+
+.mobile-menu {
+    position: fixed;
+    background-color: var(--bg-mobile);
+    z-index: 2;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    .container{
+        display: flex;
+        height: 100%;
+        overflow: auto;
+    }
+}
+
+.mobile-close-button {
+    display: block;
+    margin-left: auto;
+    background-color: transparent;
+    border-color: transparent;
+    top: 20px;
+    right: 20px;
+    margin-bottom: 26px;
+    cursor: pointer;
+    height: 14px;
+}
+
+.mobile-button-icon{
+    fill: var(--white);
+    height: 14px;
+    &:hover,
+    &:focus{
+        fill: var(--title-color);
+    }
+}
+
+.mobile-button-buy{
+    position: relative;
+    width: 209px;
+    height: 44px;
+    background-color: var(--white);
+    border: 1px solid transparent;
+    border-radius: 22px;
+    font-family: 'DM Sans';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.3;
+    color: var(--title-color);
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    &:hover,
+    &:focus{
+        background-color: var(--title-color);
+        color: var(--white);
+    }
+}
+
+.button-buy-icon{
+    position: absolute;
+    fill: var(--title-color);
+    height: 8px;
+    justify-content: center;
+    margin-left: 15px;
+}
+
+.header-menu-list{
+    list-style: none;
+    padding-left: 0;
+}
+
+.header-menu-item{
+    font-family: 'DM Sans';
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.29;
+    border: 1px solid #E18298;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    text-align: center;
 }
